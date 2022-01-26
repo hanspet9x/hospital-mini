@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.oze.hospital.SmokeTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.045 s <<< FAILURE! - in org.oze.hospital.SmokeTest
+contextsLoad  Time elapsed: 0.042 s  <<< ERROR!
+java.lang.NullPointerException: The condition to evaluate should not be null
+	at org.oze.hospital.SmokeTest.contextsLoad(SmokeTest.java:19)
+

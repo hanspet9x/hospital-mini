@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.oze.hospital.StaffLoginTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.431 s <<< FAILURE! - in org.oze.hospital.StaffLoginTest
+accessLogin  Time elapsed: 1.006 s  <<< ERROR!
+org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [java.util.List<org.springframework.http.ResponseEntity<?>>] and content type [text/html;charset=UTF-8]
+	at org.oze.hospital.StaffLoginTest.accessLogin(StaffLoginTest.java:43)
+
