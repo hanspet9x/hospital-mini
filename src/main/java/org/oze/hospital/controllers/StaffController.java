@@ -15,8 +15,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 @RestController
 @RequestMapping(path = "/staff")
 public class StaffController {
-    @Autowired
-    private StaffService service;
+	
+	private final StaffService service;
+	public StaffController(StaffService service) {
+		this.service = service;
+	}
+	
 
     @PostMapping(value="/register")
     public ResponseEntity<?> createStaff(@RequestBody UserRequest request) {

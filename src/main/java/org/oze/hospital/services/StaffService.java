@@ -20,9 +20,6 @@ public class StaffService {
     private final StaffRepository userRepository;
     private final JwtUserDetailsService userDetailsService;
     
-    public String hello() {
-    	return "hello";
-    }
     public ResponseEntity<ResponseMessage> createStaff(UserRequest request) {
         try {
             Optional<Staff> exist = userRepository.findByUsername(request.getUsername());
